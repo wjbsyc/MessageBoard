@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>地狱通信</title>
+<link href="css/login1.css" mce_href="css/login1.css" rel="stylesheet" type="text/css" /> 
+<script language="javascript" type="text/javascript"> 
+var i = 5; 
+var intervalid; 
+intervalid = setInterval("fun()", 1000); 
+function fun() { 
+if (i == 0) { 
+window.location.href = "index.html"; 
+clearInterval(intervalid); 
+} 
+document.getElementById("mes").innerHTML = i; 
+i--; 
+} 
+</script> 
+<style type="text/css"> 
+.align-center{ 
+width:1300px;  
+text-align:center; 
+position: fixed;
+height: 50px;
+bottom: 40px; 
+padding: 10px; 
+margin: 10px; 
+}
+.center{
+	margin:0 auto; 
+	width:1000px;
+	text-align:center;
+	height: 90px;
+}
+body {
+	background-image: url(jiko1.jpg);
+	background-attachment:fixed;
+	background-position: center top;
+}
+.center p strong {
+	font-family: 黑体;
+}
+</style>
+</head>
+<body>
+<div class="center">
+<b><font size="7">地獄通信</font></strong></b>
+<p>&nbsp;</p>
+<p><b><font size="5">error</font></b></p>
+<p><b><font size="5">いっぺん、死んでみる？</font></b></p>
+</div>
+<div class="align-center">
+<p><span id="mes">5</span> 秒後には消えていく</p> 
+</div>
+</body>
+</html>
