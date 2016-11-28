@@ -4,13 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>地狱通信</title>
 <style type="text/css"> 
+
+#align-center{ 
+text-align:middle;
+vertical-align:middle;
+font-family:'微软雅黑';
+}
 /*
-.align-center{ 
-margin:0 auto;  
-width:600px; 
-text-align:center; 
-color:#FFF;
-} 
 body {
 	background-color: #000;
 }
@@ -61,8 +61,8 @@ h{color: transparent;-webkit-text-stroke: 0.5px black;}
     <p id="box4"><input type="text" name="invite"  class="table-condensed" placeholder="invitecode" style="color:#fff;" /><br /></p>
   <p style="color:#FFF; font-family:微软雅黑; font-size:18px" id="box3"><br /></p>
   <p><br>
-    <button type="submit" class="btn btn-primary">注册</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button type="button" class="btn btn-primary" onClick="location.href='test.php'" >返回</button>
+    <button type="submit" class="btn btn-primary" id="align-center">注册</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-primary" id="align-center" onClick="location.href='test.php'" >返回</button>
   </p>
 </form>
 </div>

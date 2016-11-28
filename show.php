@@ -4,7 +4,7 @@ header('Content-Type:text/html; charset=utf8');
        $value=$_POST['ask'];      
        $username=$_SESSION['username'];
 	   $uid=$_SESSION['uid']; 
-       $conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root","wjbs19950104");
+       $conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root"," ");
        $conn->exec("set names 'utf8'");
        $flag=25*$value;
        $sql =$conn->prepare("select uid,mes,mid from message limit ? , ? ");

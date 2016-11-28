@@ -108,7 +108,7 @@ if(!isset($_SESSION['username']))
 else{
 $username=$_SESSION['username'];
 }
-$conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root","wjbs19950104");
+$conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root"," ");
 $conn->exec("set names 'utf8'");
 $sql2=$conn->prepare("select uid from userid where id = ? ");
 $sql2->execute(array($username));

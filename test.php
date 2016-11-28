@@ -4,13 +4,13 @@
 <title>地狱通信</title>
 <style type="text/css"> 
 h{color: transparent;-webkit-text-stroke: 0.5px black;}
-/*
-.align-center{ 
-margin:0 auto;  
-width:600px; 
-text-align:center; 
-color:#FFF;
+
+#align-center{ 
+text-align:middle; 
+vertical-align:middle;
+font-family:'微软雅黑';
 } 
+/*
 body {
 	background-color: #000;
 }
@@ -41,7 +41,7 @@ body {
 <?php
 if(isset($_POST['username'])&&isset($_POST['pwd'])){
 	if($_POST['username']&&$_POST['pwd']){
-$conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root","wjbs19950104");
+$conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root"," ");
 $conn->exec("set names 'utf8'");
 //$conn = mysql_connect("localhost","root","APTX4869");
 //mysql_select_db("user", $conn);
@@ -79,8 +79,8 @@ else
     <p id="box2"><input type="password" name="pwd" class="password" placeholder="Password" style="color:#fff;" maxlength="20"/><br /></p>
     <p style="color:#FFF; font-family:微软雅黑; font-size:18px" id="box3"><br /></p>
   <p><br>
-    <button type="submit" class="btn btn-primary">登录</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button type="button" class="btn btn-primary" onClick="location.href='regist.php'" >注册</button>
+    <button type="submit" class="btn btn-primary" id="align-center">登录</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-primary" id="align-center" onClick="location.href='regist.php'" >注册</button>
   </p>
 </form>
 </div>

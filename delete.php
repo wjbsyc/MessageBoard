@@ -8,7 +8,7 @@
 
 //if(isset($_POST['username'])&&isset($_POST['pwd'])&&isset($_POST['invite'])){
 	//if($_POST['username']&&$_POST['pwd']&&$_POST['invite']){
-$conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root","wjbs19950104");
+$conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root"," ");
 $conn->exec("set names 'utf8'");
 $sql1=$conn->prepare("select id,uid from userid where id = ? and uid = ? ;");
 $sql1->execute(array($username,$uid));

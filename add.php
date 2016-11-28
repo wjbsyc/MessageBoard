@@ -5,7 +5,7 @@ header('Content-Type:text/html; charset=utf8');
        $mess=$backValue;
        $username=$_SESSION['username'];
 	   $uid=$_SESSION['uid']; 
-       $conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root","wjbs19950104");
+       $conn=new PDO("mysql:host=localhost;dbname=user;charset=utf8","root"," ");
        $conn->exec("set names 'utf8'");
 
 
